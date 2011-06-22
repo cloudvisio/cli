@@ -1,0 +1,17 @@
+{
+  "name": "cloudvisio",
+  "description": "Visual Representation of Cloud Datasets",
+  "version": "0.0.1",
+  "author": "Makis Tracend <makis@makesit.es> (makesit.es)",
+  "dependencies": {
+    "express": ">= 2.3.2"
+  },
+  "keywords": ["cloud", "visualization", "json"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/makesites/cloudvisio.git"
+  },
+  "main": "index",
+  "bin": { },
+  "engines": { "node": ">= 0.4.1 < 0.5.0" }
+}
