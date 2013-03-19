@@ -1,21 +1,21 @@
 {
   "name": "cloudvisio",
-  "description": "[WIP] Visual Representation of Cloud Datasets",
-  "version": "0.0.2",
+  "description": "[WIP] CLI for cloudvisio",
+  "version": "0.0.1",
   "author": "makesites",
   "contributors": [
     { "name": "Makis Tracend", "email": "makis@makesit.es" }
   ],
   "homepage": "http://www.makesites.org/cloudvisio", 
-  "keywords": ["cloud", "visualization", "json"],
+  "keywords": ["cloudvisio", "cloud", "visio", "visualize", "vector", "svg", "d3", "webgl", "visualization","graph", "json"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/makesites/cloudvisio-node.git"
+    "url": "git://github.com/makesites/cloudvisio-cli.git"
   },
+  "engines": { "node": "0.8.x" }, 
   "main": "index",
   "bin": { },
-  "engines": { "node": ">0.4.x" }, 
   "dependencies": {
-    "express": ">= 2.3.2"
+    "cloudvisio": "~0.x"
   }
 }
