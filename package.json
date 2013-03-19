@@ -1,5 +1,5 @@
 {
-  "name": "cloudvisio",
+  "name": "cloudvisio-cli",
   "description": "[WIP] CLI for cloudvisio",
   "version": "0.0.1",
   "author": "makesites",
