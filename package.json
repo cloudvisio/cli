@@ -1,21 +1,22 @@
 {
-  "name": "cloudvisio-cli",
-  "description": "[WIP] CLI for cloudvisio",
-  "version": "0.0.1",
-  "author": "makesites",
-  "contributors": [
-    { "name": "Makis Tracend", "email": "makis@makesit.es" }
-  ],
-  "homepage": "http://www.makesites.org/cloudvisio", 
-  "keywords": ["cloudvisio", "cloud", "visio", "visualize", "vector", "svg", "d3", "webgl", "visualization","graph", "json"],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/makesites/cloudvisio-cli.git"
-  },
-  "engines": { "node": "0.8.x" }, 
-  "main": "index",
-  "bin": { },
-  "dependencies": {
-    "cloudvisio": "~0.x"
-  }
+	"name": "cloudvisio-cli",
+	"description": "[WIP] CLI for cloudvisio",
+	"version": "0.0.2",
+	"author": "makesites",
+	"contributors": [
+		{ "name": "Makis Tracend", "email": "makis@makesit.es" }
+	],
+	"homepage": "http://www.makesites.org/cloudvisio", 
+	"keywords": ["cloudvisio", "cloud", "visio", "visualize", "vector", "svg", "d3", "webgl", "visualization","graph", "json"],
+	"repository": {
+	"type": "git",
+		"url": "git://github.com/makesites/cloudvisio-cli.git"
+	},
+	"engines": { "node": "0.8.x" }, 
+	"main": "index",
+	"bin": { },
+	"dependencies": {
+		"cloudvisio": "~0.x", 
+		"commander" : "1.x"
+	}
 }
