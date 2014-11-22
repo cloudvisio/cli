@@ -1,7 +1,7 @@
 {
 	"name": "cloudvisio-cli",
 	"description": "Command-line interface for Cloudvisio",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"author": "kdi",
 	"contributors": [
 		{ "name": "Makis Tracend", "email": "makis@makesit.es" }
