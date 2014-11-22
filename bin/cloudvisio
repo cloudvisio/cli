@@ -1,0 +1,84 @@
+#!/usr/local/bin/node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander')
+	main = require("../lib/main");
+
+var exec;
+
+/* use package infor for this ourput */
+program
+	.version('0.2.0')
+	.option('-c, --config <path>', 'Set config path. Defaults to ~/.cloudvisio')
+
+/* Setup */
+program
+	.command('setup')
+	.description('Setup credentials')
+	.action(function(options){
+		process.nextTick(function(){
+			exec.setup(options )
+		});
+	})
+
+/* User */
+program
+	.command('user [id]')
+	.description('Read user info')
+	.action(function(id, options){
+		id = id || false;
+		process.nextTick(function(){
+			exec.user( id, options )
+		});
+	})
+
+/* Product */
+program
+	.command('product [id]')
+	.description('Read product details')
+	.option("-a, --all", "List all products for user")
+	.action(function(id, options){
+		id = id || false;
+		process.nextTick(function(){
+			exec.product( id, options )
+		});
+	})
+	.on('--help', function() {
+		console.log('  Examples:');
+		console.log();
+		console.log('    $ product {{id}}');
+		console.log('    $ product --all');
+		console.log();
+});
+
+/* Subscriptions */
+program
+	.command('sub [id]')
+	.description('Read subscriber info, optionally from product')
+	.option("-a, --all", "Read all subscribers")
+	.option("-i, --item <number>", "Output a single item by its id")
+	.option("-k, --keys <list>", "Return only certain fields")
+	.option("-n, --number <number>", "Limit number of items returned")
+	.option("-q, --query <string>", "Output items based on conditions")
+	.option("-o, --order <field>", "Define the order of output based on a field")
+	.option("-g, --graph", "Create Graph")
+	.action(function(id, options){
+		id = id || false;
+		process.nextTick(function(){
+			exec.sub( id, options )
+		});
+	})
+	.on('--help', function() {
+		console.log('  Examples:');
+		console.log();
+		console.log('    $ cloudvisio -i {{id}}');
+		console.log('    $ cloudvisio {{user}} --all');
+		console.log();
+});
+
+program.parse(process.argv);
+
+exec = main( program );
