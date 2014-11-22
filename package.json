@@ -1,22 +1,22 @@
 {
 	"name": "cloudvisio-cli",
-	"description": "[WIP] CLI for cloudvisio",
+	"description": "Command-line interface for Cloudvisio",
 	"version": "0.0.2",
-	"author": "makesites",
+	"author": "kdi",
 	"contributors": [
 		{ "name": "Makis Tracend", "email": "makis@makesit.es" }
 	],
-	"homepage": "http://www.makesites.org/cloudvisio", 
+	"homepage": "http://cloudvisio.com",
 	"keywords": ["cloudvisio", "cloud", "visio", "visualize", "vector", "svg", "d3", "webgl", "visualization","graph", "json"],
 	"repository": {
 	"type": "git",
-		"url": "git://github.com/makesites/cloudvisio-cli.git"
+		"url": "git://github.com/cloudvisio/cli.git"
 	},
-	"engines": { "node": "0.8.x" }, 
+	"engines": { "node": ">=0.8.x" },
 	"main": "index",
 	"bin": { },
 	"dependencies": {
-		"cloudvisio": "~0.x", 
+		"cloudvisio-api": "~0.x",
 		"commander" : "1.x"
 	}
 }
